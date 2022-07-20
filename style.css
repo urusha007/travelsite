@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./pexels-josh-willink-1157399.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size:100% 100%;
+
+}
+.header{
+    background-color: #1b1b1b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+}
+
+  
+nav ul {
+     display: flex;
+     list-style: none;
+     gap: 20px;
+     
+
+}
+nav ul li{
+    
+    font-size: 15px;
+}
+h2{
+    padding-left: 20px;
+    
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav{
+    padding-right: 20px;
+    
+
+
+
+}
+.menu_icon{
+   position: absolute;
+   top: 26%;
+   right: 11%;
+}
+.mobile_menu{
+position: absolute;
+    top: 70%;
+    right: 5%;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.mobile_menu ul{
+    list-style: none;
+}
+
+.midsec{
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+}
+.midsec h1 {
+    font-size: 45px;
+    font-weight: bolder;
+
+}
+.h1h1{
+    padding-bottom: 40px;
+}
+ 
+.btn{
+    height: 40px;
+    width: 150px;
+    font-size: 15px;
+    background-color: orange;
+    border: none;
+    }
+
+    .navigations{
+        background: blue;
+    }
+    .toggle{
+        display: none;
+    }
+
+
+@media(min-width:390px){
+    .container{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./pexels-josh-willink-1157399.jpg");
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    
+    }
+    nav {
+        display: none;
+    }
+    .midsec{
+        padding-top: 100px;
+
+    }
+    .midsec h1{
+         font-size: 25px;
+    }
+    .btn{
+        height: 30px;
+        width: 100px;
+    }
+}
+@media(min-width:769px){
+    nav{
+        display: block;
+    }
+    .menu_icon{
+        display: none;
+    }
+    .btn{
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
+        background-color: orange;
+        border: none;
+        }
+        .midsec{
+            text-align: center;
+            padding-top: 200px;
+            color: white;
+        }
+        .midsec h1 {
+            font-size: 45px;
+            font-weight: bolder;
+        
+        }
+        .mobile_menu{
+            display: none;
+        }
+}
+   

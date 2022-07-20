@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        
+
+     
+        <header class="header">
+            <div>
+                <h2>Take a Trip</h2>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li>Feedback</li>
+                </ul>
+            </nav>
+            <div class="menu_icon" onclick="toggle()"> 
+                <i class="fa-solid fa-bars"></i> 
+            </div>
+            <div class="mobile_menu toggle" id="mobile">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+                    <li>Feedback</li>
+                </ul>
+            </div>
+         
+
+        </header>
+        <div class="midsec">
+            <p>Enjoy</p>
+            <h1>International Travel</h1>
+            <h1 class="h1h1">Agency</h1>
+            <button id="demo" class="btn" onclick="handleBtn()">Book your trip</button>
+        </div>
+        <!-- <div id="demo" class="navigations">hello</div> -->
+
+       
+
+    </div>
+    <script>
+        function toggle(){
+           const a = document.getElementById("mobile")
+         
+
+           if(a.classList.contains('toggle')){
+            a.classList.remove('toggle');
+           }
+           else{
+            a.classList.add('toggle');
+           
+           }
+        }
+        function handleBtn(){
+            // window.location.href ='https://www.youtube.com/watch?v=ZPbMooyRBSg';
+            window.open('https://www.youtube.com/watch?v=ZPbMooyRBSg', '_black')
+        }
+    </script>
+</body>
+</html>
